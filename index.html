@@ -1,58 +1,173 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Meu site</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+      html {
+        scroll-behavior: smooth;
       }
-
+      body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: 'Fjalla One', sans-serif;
+      }
+      footer {
+        background-color: black;
+        padding: 30px;
+        color:white;
+      }
+      #topMenu{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #302f2f;
+        margin: 0;
+      }
+      #topMenu li {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+      }
+      #topMenu li img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+      }
+      #topMenu li:first-child{
+        margin-right: auto;
+      }
+      .section1{
+        display: flex;
+        height: 40vh;
+        background-color: #8B008B;
+      }
+      .section2{
+        display: flex;
+        width: 33vh;
+        background-color: white;
+      }
+      .section3{
+        display: flex;
+        height: 33vh;
+        background-color: #e5e6ea;
+      }
+      .centralize {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
+      .imagemProjeto {
+        width: 15vw;
+        height: 15vw;
+        padding-left: 15px;
+      }
+      .botaoVermelho{
+        background-color: #c64e63;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        font-family: 'Fjalla One', sans-serif;
+      }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
   </head>
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<body class="text-center">
   <header class="masthead mb-auto">
-    <div class="inner">
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Página Inicial</a>
-      </nav>
-    </div>
+    <nav>
+      <ul  id="topMenu">
+        <li>
+          <img src="assets/logo.png">
+        </li>
+        <li>Home</li>
+        <li>Projetos</li>
+        <li>Contatos</li>
+      </ul>
+    </nav>
   </header>
-
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Bem vindo(a) a minha página!</h1>
-    <p class="lead">Olá, meu nome é André Lourenço Develop Frontend.</p>
-  </main>
-
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <div class="section1">
+      <div class="centralize">
+            <h1 style="color: white">Bem vindo(a) a minha página!</h1>
+            <p style="color: white">Olá, meu nome é André Lourenço Develop Frontend.</p>
+            <a href="#projetos">
+              <button class="botaoVermelho">Meus projetos</button>
+            </a>
+            
+      </div>
     </div>
+    <div id="projetos" class="section2 centralize">
+      <table class="centralize">
+        <tr>
+          <td width="40%">
+            <img class="imagemProjeto" src="https://blog.dankicode.com/wp-content/uploads/2019/11/o-que-e%CC%81-sass-650x401.jpg">
+          </td>
+          <td  style="width=60%; text-align: left;">
+            <ul style="color: #8B008B">
+              Projeto 1
+              <hr>
+              <li>Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projeto Descrição do projeto</li>
+              <li>Tecnologia 1</li>
+              <li>Tecnologia 2</li>
+              <li>Tecnologia 3</li>
+              <li>Tecnologia 4</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="projetos" class="section3 centralize">
+      <table class="centralize">
+        <tr>
+          <td  style="width=60%; text-align: left;">
+            <ul style="color: #8B008B">
+              Projeto 2
+              <hr>
+              <li>Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projeto Descrição do projeto</li>
+              <li>Tecnologia 1</li>
+              <li>Tecnologia 2</li>
+              <li>Tecnologia 3</li>
+              <li>Tecnologia 4</li>
+            </ul>
+          </td>
+          <td width="40%">
+            <img class="imagemProjeto" src="https://blog.dankicode.com/wp-content/uploads/2019/11/o-que-e%CC%81-sass-650x401.jpg">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="projetos" class="section2 centralize">
+      <table class="centralize">
+        <tr>
+          <td width="40%">
+            <img class="imagemProjeto" src="https://blog.dankicode.com/wp-content/uploads/2019/11/o-que-e%CC%81-sass-650x401.jpg">
+          </td>
+          <td  style="width=60%; text-align: left;">
+            <ul style="color: #8B008B">
+              Projeto 3
+              <hr>
+              <li>Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projeto Descrição do projeto</li>
+              <li>Tecnologia 1</li>
+              <li>Tecnologia 2</li>
+              <li>Tecnologia 3</li>
+              <li>Tecnologia 4</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <footer class="centralize">
+    <h5>@Desenvolvido por André Lourenço</h5>
   </footer>
-</div>
-
-
-</body></html>
+</body>
+</html>
